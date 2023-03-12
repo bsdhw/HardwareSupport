@@ -9,9 +9,9 @@ We determine support status by the following formula:
 
     Status = (S1*T1 + S2*T2 + ... + Sn*Tn) / (T1 + T2 + ... + Tn)
 
-    Sn — support status of the device (1 — supported, 0 — not supported)
+    Sn - support status of the device (1 - supported, 0 - not supported)
 
-    Tn — total number of device samples
+    Tn - total number of device samples
 
 Everyone can contribute to this report by uploading probes of their computers by
 the [hw-probe](https://github.com/linuxhw/hw-probe/blob/master/INSTALL.BSD.md) tool:
@@ -20,31 +20,33 @@ the [hw-probe](https://github.com/linuxhw/hw-probe/blob/master/INSTALL.BSD.md) t
 
 ### Results
 
-Devices — total devices,
-FreeBSD — supported in FreeBSD,
-OpenBSD — supported in OpenBSD,
-NetBSD  — supported in NetBSD.
+Devices - total devices,
+FreeBSD - supported in FreeBSD,
+OpenBSD - supported in OpenBSD,
+NetBSD  - supported in NetBSD.
 
-| PCI Class                    | Devices | FreeBSD | OpenBSD | NetBSD  |
-|------------------------------|---------|---------|---------|---------|
-| Card reader                  | 8032    | 98.6%   | 98.6%   | 96.6%   |
-| Encryption controller        | 6492    | 37.7%   | 52.3%   | 32.7%   |
-| **Graphics card**            | 78096   | 88.7%   | 67.7%   | 60.8%   |
-| **Net/ethernet**             | 49021   | 99.1%   | 99.6%   | 95.2%   |
-| **Net/wireless**             | 37431   | 71.3%   | 61.9%   | 50.3%   |
-| Sd host controller           | 9041    | 57.8%   | 21.3%   | 37.5%   |
-| Serial controller            | 4058    | 68.3%   | 84.4%   | 76.4%   |
-| Smbus                        | 54625   | 91.9%   | 99.9%   | 99.8%   |
-| **Sound**                    | 90010   | 81.9%   | 65.7%   | 0.9%    |
-| **Storage/ata**              | 47937   | 91.6%   | 40.6%   | 24.4%   |
-| **Storage/ide**              | 30205   | 95.5%   | 94.5%   | 89.1%   |
-| **Storage/raid**             | 3378    | 95.1%   | 92.6%   | 89.9%   |
-| Storage/sas                  | 160     | 98.1%   | 28.7%   | 28.7%   |
-| Storage/scsi                 | 147     | 31.3%   | 90.5%   | 91.8%   |
+| PCI Class                    | Devices | FreeBSD | OpenBSD | NetBSD |
+|------------------------------|---------|---------|---------|--------|
+|                              | 1214    | 1.6%    | 1.6%    | 1.4%    |
+| Card reader                  | 668     | 90.9%   | 90.9%   | 89.1%   |
+| Co-processor                 | 220     | 65.5%   | 0.5%    | 65.5%   |
+| Encryption controller        | 1746    | 32.3%   | 61.3%   | 41.2%   |
+| **Graphics card**            | 9567    | 75.4%   | 82%     | 56.2%   |
+| **Net/ethernet**             | 2219    | 75.8%   | 72.5%   | 62.9%   |
+| **Net/wireless**             | 3356    | 69.8%   | 71.5%   | 53.9%   |
+| Sd host controller           | 1277    | 28.5%   | 22.6%   | 9.5%    |
+| Signal processing            | 6780    | 31%     | 45.9%   | 4%      |
+| Smbus                        | 8655    | 86.3%   | 96%     | 96.3%   |
+| **Sound**                    | 9509    | 82.3%   | 66.8%   | 0.3%    |
+| **Storage/ata**              | 8171    | 77.9%   | 22.9%   | 14.1%   |
+| **Storage/ide**              | 1908    | 93.7%   | 92.5%   | 85.3%   |
+| **Storage/raid**             | 618     | 79.4%   | 81.1%   | 68.6%   |
+| Storage/sas                  | 225     | 96.4%   | 78.7%   | 78.2%   |
+| Storage/scsi                 | 91      | 14.3%   | 58.2%   | 56%     |
 
-Avg. hardware support in FreeBSD: 86.69%
+Avg. hardware support in FreeBSD: 69.74%
 
-Avg. hardware support in OpenBSD: 73.24%
+Avg. hardware support in OpenBSD: 63.98%
 
-Avg. hardware support in NetBSD: 54.12%
+Avg. hardware support in NetBSD: 39.56%
 
